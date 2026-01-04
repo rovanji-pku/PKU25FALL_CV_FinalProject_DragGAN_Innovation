@@ -366,7 +366,7 @@ class Renderer:
             current_img_pil = Image.fromarray(current_img)
 
 
-            if self.reference_frame is None:
+            if self.reference_frame is None: # initialization
                 self.reference_frame = current_img_pil.copy()
                 self.reference_points = points.copy()
                 tracked_points = points.copy()
